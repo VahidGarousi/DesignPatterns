@@ -1,5 +1,6 @@
 package ir.vg.app.designpattern.creational.factory_pattern.dialog_sample.button;
 
+import ir.vg.app.designpattern.creational.factory_pattern.dialog_sample.button.events.ButtonEventListener;
 import ir.vg.app.designpattern.creational.factory_pattern.dialog_sample.button.types.ButtonType;
 
 public abstract class Button {
@@ -14,7 +15,7 @@ public abstract class Button {
 
     }
 
-    protected abstract void onClick();
+    public abstract void onClick(ButtonEventListener listener);
 
     protected abstract void render();
 
