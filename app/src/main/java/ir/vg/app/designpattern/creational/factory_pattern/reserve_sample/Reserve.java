@@ -1,6 +1,6 @@
-package ir.vg.app.designpattern.creational.factory.reserve_sample;
+package ir.vg.app.designpattern.creational.factory_pattern.reserve_sample;
 
-import ir.vg.app.designpattern.creational.factory.reserve_sample.types.ReserveType;
+import ir.vg.app.designpattern.creational.factory_pattern.reserve_sample.types.ReserveType;
 
 public abstract class Reserve {
     private ReserveType type;
