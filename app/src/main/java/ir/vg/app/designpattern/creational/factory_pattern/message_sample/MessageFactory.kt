@@ -11,7 +11,8 @@ object MessageFactory {
             MessageType.TEXT -> TextMessage()
             MessageType.VIDEO -> VideoMessage()
             MessageType.VOICE -> VoiceMessage()
-            else -> throw IllegalStateException("")
+            else -> throw  IllegalStateException("Unexpected value: $type");
+
         }
     }
 }

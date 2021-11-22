@@ -23,7 +23,7 @@ public class ReserveFactory {
                 reserve = new PlaceReserve();
                 break;
             default:
-                throw new IllegalStateException("");
+                throw new IllegalStateException("Unexpected value: " + type);
         }
         return reserve;
     }

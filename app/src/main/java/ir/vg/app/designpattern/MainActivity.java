@@ -4,6 +4,9 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import ir.vg.app.designpattern.creational.factory_pattern.dialog_sample.dialog.Dialog;
+import ir.vg.app.designpattern.creational.factory_pattern.dialog_sample.dialog.DialogFactory;
+import ir.vg.app.designpattern.creational.factory_pattern.dialog_sample.dialog.types.DialogType;
 import ir.vg.app.designpattern.creational.factory_pattern.message_sample.Message;
 import ir.vg.app.designpattern.creational.factory_pattern.message_sample.MessageFactory;
 import ir.vg.app.designpattern.creational.factory_pattern.message_sample.MessageType;
@@ -18,5 +21,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Reserve reserve = ReserveFactory.create(ReserveType.PLACE);
         Message message = MessageFactory.create(MessageType.TEXT);
+        Dialog dialog = DialogFactory.create(DialogType.NORMAL);
     }
 }
