@@ -1,14 +1,14 @@
-package ir.vg.app.designpattern.creational.factory.reserve_sample;
+package ir.vg.app.designpattern.creational.factory_pattern.reserve_sample;
 
-import ir.vg.app.designpattern.creational.factory.reserve_sample.types.ReserveType;
-import ir.vg.app.designpattern.creational.factory.reserve_sample.types.cruise.CruiseReserve;
-import ir.vg.app.designpattern.creational.factory.reserve_sample.types.line.LineReserve;
-import ir.vg.app.designpattern.creational.factory.reserve_sample.types.place.PlaceReserve;
-import ir.vg.app.designpattern.creational.factory.reserve_sample.types.yacht.YachtReserve;
+import ir.vg.app.designpattern.creational.factory_pattern.reserve_sample.types.ReserveType;
+import ir.vg.app.designpattern.creational.factory_pattern.reserve_sample.types.cruise.CruiseReserve;
+import ir.vg.app.designpattern.creational.factory_pattern.reserve_sample.types.line.LineReserve;
+import ir.vg.app.designpattern.creational.factory_pattern.reserve_sample.types.place.PlaceReserve;
+import ir.vg.app.designpattern.creational.factory_pattern.reserve_sample.types.yacht.YachtReserve;
 
 public class ReserveFactory {
     public static Reserve create(ReserveType type) {
-        Reserve reserve = null;
+        Reserve reserve;
         switch (type) {
             case YACHT:
                 reserve = new YachtReserve();
