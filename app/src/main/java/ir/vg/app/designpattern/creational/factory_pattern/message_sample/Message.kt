@@ -4,12 +4,12 @@ abstract class Message constructor(
     val type: MessageType
 ) {
 
-    private fun someOperationForAllReserves() {
+    private fun someOperationForAllMessages() {
 
     }
 
     init {
-        someOperationForAllReserves()
+        someOperationForAllMessages()
     }
 
     protected abstract fun construct()
